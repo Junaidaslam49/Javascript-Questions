@@ -46,12 +46,9 @@ function fizzBuzz () {
 #### Answer:
 
 ```javascript 
-function union(array1,array2) {
-// in combination we are combining two arrays
-    let combination = array1.concat(array2);
-// in result we have use filter method to iterate value and index of array and all elements of that of combination are stored in self    
-    let result = combination.filter(function(value, index, self) {
-// in shouldAdd we are commparing value of index of value of self with index we used in filter and returning true and false       
+function union(array1,array2) { 
+    let combination = array1.concat(array2);   
+    let result = combination.filter(function(value, index, self) {       
     let shouldAdd = self.indexOf(value) === index;
         return shouldAdd;
     });
@@ -59,6 +56,9 @@ function union(array1,array2) {
     return result;  
 }
 ```
+#### Detail: 
+In combination we are combining two arrays and in result we have use filter method to iterate value and index of array and all elements of that of combination are stored in self in shouldAdd we are commparing value of index of value of self with index we used in filter and returning true and false.
+
 ###### 4. Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null] Expected result : [15, -22, 47]
 #### Answer:
 
