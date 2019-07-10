@@ -77,4 +77,18 @@ function filterArray() {
 ###### Detail:
 Used filter method to check each value of sampleArray and apllied if condition to get the expected result
 
+###### 5. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
+
+#### Answer:
+
+```javascript
+function removeString(myString,position) {
+  part1 = myString.substring(0, position);   
+  part2 = myString.substring(position + 1, myString.length); 
+  return (part1 + part2);     
+}
+```
+#### Detail:
+In part1 removing character from the given position whose starting position is 0  as starting position is inclusive and ending position is excluded.In part 2 one is added in position as first parametre  of substring function and total length as second parametre of given string which is ending point of substring function.
+
 
