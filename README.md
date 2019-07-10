@@ -41,7 +41,7 @@ function fizzBuzz () {
             }
           }
   ```
-  ###### 3. Write a JavaScript program to compute the union of two arrays.Sample Data:
+###### 3. Write a JavaScript program to compute the union of two arrays.Sample Data:
 
 #### Answer:
 
@@ -59,15 +59,13 @@ function union(array1,array2) {
     return result;  
 }
 ```
-###### 4. //Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null] Expected result : [15, -22, 47]
+###### 4. Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null] Expected result : [15, -22, 47]
 #### Answer:
 
 ```javascript
 function filterArray() {
-  let sampleArray = [NaN, 0, 15, false, -22, '',undefined, 47, null, "ahsan"];
-  //Used filter method to check each value of sampleArray.  
-  var sampleArrayFixed = sampleArray.filter(value => {
-  //Apllied if condition to get the expected result  
+  let sampleArray = [NaN, 0, 15, false, -22, '',undefined, 47, null, "ahsan"];  
+  var sampleArrayFixed = sampleArray.filter(value => {  
   if ((value !== false) && (value !== undefined) && (value !== null)  && (value !== 0) && ((isNaN(value) && typeof value === 'number') !== true) && (value !== "")){
           return true; //output: [15, -22, 47]
           }
@@ -76,4 +74,7 @@ function filterArray() {
   return sampleArrayFixed;
 }
   ```
+###### Detail:
+Used filter method to check each value of sampleArray and apllied if condition to get the expected result
+
 
