@@ -59,3 +59,21 @@ function union(array1,array2) {
     return result;  
 }
 ```
+###### 4. //Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null] Expected result : [15, -22, 47]
+#### Answer:
+
+```javascript
+function filterArray() {
+  let sampleArray = [NaN, 0, 15, false, -22, '',undefined, 47, null, "ahsan"];
+  //Used filter method to check each value of sampleArray.  
+  var sampleArrayFixed = sampleArray.filter(value => {
+  //Apllied if condition to get the expected result  
+  if ((value !== false) && (value !== undefined) && (value !== null)  && (value !== 0) && ((isNaN(value) && typeof value === 'number') !== true) && (value !== "")){
+          return true; //output: [15, -22, 47]
+          }
+      return false;
+      });
+  return sampleArrayFixed;
+}
+  ```
+
