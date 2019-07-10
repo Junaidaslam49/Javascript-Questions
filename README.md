@@ -22,25 +22,26 @@ function multiplesOf3and5(number) {
 
 ```javascript
 function fizzBuzz () {
-    var total = 0;
-    for (var i = 1 ; i < 100 ; i++){
-          if  (i % 3 == 0) {
-              total = 'Fizz';
-              console.log(total);
-              } 
-          if (i % 5 == 0) {
-              total = 'Buzz';
-              console.log(total);
-              }
-      if( (i % 3 == 0) && (i % 5 == 0) ){
-              total = 'FizzBuzz';
-              console.log(total);
-              } 
+        var total = 0;
+        for (var i = 1 ; i < 20 ; i++){
+            if  (i % 3 == 0) {
+                total = 'Fizz';
+                console.log(total);
+            } 
+            else if (i % 5 == 0) {
+                total = 'Buzz';
+                console.log(total);
+            }
+            else if ( (i % 3 == 0) && (i % 5 == 0) ){
+                total = 'FizzBuzz';
+                console.log (total);
+            }else{
             total = i;
             console.log(total);
             }
-          }
-  ```
+        }
+    }  
+ ```
 #### 3. Write a JavaScript program to compute the union of two arrays.Sample Data:
 
 #### Answer:
