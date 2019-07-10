@@ -1,7 +1,7 @@
 # Javascript-Questions
 
 
-###### 1. Write a JavaScript program to sum the multiples of 3 and 5 under 1000
+#### 1. Write a JavaScript program to sum the multiples of 3 and 5 under 1000
 #### Answer:
 
 ```javascript
@@ -16,7 +16,7 @@ function multiplesOf3and5(number) {
 }
 ```
 
-###### 2. Write a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+#### 2. Write a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
 #### Answer:
 
@@ -41,7 +41,7 @@ function fizzBuzz () {
             }
           }
   ```
-###### 3. Write a JavaScript program to compute the union of two arrays.Sample Data:
+#### 3. Write a JavaScript program to compute the union of two arrays.Sample Data:
 
 #### Answer:
 
@@ -59,7 +59,7 @@ function union(array1,array2) {
 #### Detail: 
 In combination we are combining two arrays and in result we have use filter method to iterate value and index of array and all elements of that of combination are stored in self in shouldAdd we are commparing value of index of value of self with index we used in filter and returning true and false.
 
-###### 4. Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null] Expected result : [15, -22, 47]
+#### 4. Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null] Expected result : [15, -22, 47]
 #### Answer:
 
 ```javascript
@@ -74,10 +74,10 @@ function filterArray() {
   return sampleArrayFixed;
 }
   ```
-###### Detail:
+#### Detail:
 Used filter method to check each value of sampleArray and apllied if condition to get the expected result
 
-###### 5. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
+#### 5. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
 
 #### Answer:
 
