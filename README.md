@@ -41,3 +41,21 @@ function fizzBuzz () {
             }
           }
   ```
+  ###### 3. Write a JavaScript program to compute the union of two arrays.Sample Data:
+
+#### Answer:
+
+```javascript 
+function union(array1,array2) {
+// in combination we are combining two arrays
+    let combination = array1.concat(array2);
+// in result we have use filter method to iterate value and index of array and all elements of that of combination are stored in self    
+    let result = combination.filter(function(value, index, self) {
+// in shouldAdd we are commparing value of index of value of self with index we used in filter and returning true and false       
+    let shouldAdd = self.indexOf(value) === index;
+        return shouldAdd;
+    });
+
+    return result;  
+}
+```
