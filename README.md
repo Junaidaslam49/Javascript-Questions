@@ -92,4 +92,20 @@ function removeString(myString,position) {
 #### Detail:
 In part1 removing character from the given position whose starting position is 0  as starting position is inclusive and ending position is excluded.In part 2 one is added in position as first parametre  of substring function and total length as second parametre of given string which is ending point of substring function.
 
+#### 6. Write a JavaScript program to list the properties of a JavaScript object.
 
+#### Answer:
+
+```javascript
+function studentData(a,b,c) {
+  var student = {
+    name: a,
+    sclass: b,
+    rollno: c,
+    }
+     console.log (student.name);
+     console.log (student.rollno);
+     console.log (student.sclass);
+
+}
+```
