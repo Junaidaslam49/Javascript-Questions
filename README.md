@@ -98,14 +98,15 @@ In part1 removing character from the given position whose starting position is 0
 
 ```javascript
 function studentData(a,b,c) {
-  var student = {
+var student = {
     name: a,
     sclass: b,
     rollno: c,
     }
-     console.log (student.name);
-     console.log (student.rollno);
-     console.log (student.sclass);
-
+Object.keys(student).forEach(item => {console.log(item);});
 }
 ```
+#### Details:
+Object.keys(obj) method gives keys of the object.
+There are not methods such as Objects.forEach().
+So, if we want to iterate through all the keys, then we can use Array.forEach() function.
