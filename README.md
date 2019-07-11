@@ -23,17 +23,17 @@ function multiplesOf3and5(number) {
 ```javascript
 function fizzBuzz () {
         var total = 0;
-        for (var i = 1 ; i < 20 ; i++){
-            if  (i % 3 == 0) {
-                total = 'Fizz';
+        for (var i = 1 ; i < 100 ; i++){
+            if  (i % 15 == 0 ) {
+                total = 'FizzBuzz';
                 console.log(total);
             } 
             else if (i % 5 == 0) {
                 total = 'Buzz';
                 console.log(total);
             }
-            else if ( (i % 3 == 0) && (i % 5 == 0) ){
-                total = 'FizzBuzz';
+            else if (i % 3 == 0 ){
+                total = 'Fizz';
                 console.log (total);
             }else{
             total = i;
