@@ -120,3 +120,18 @@ function deletPropertyObject(student) {
      return student;
    }
  ```              
+#### 8. Write a JavaScript program to create a Clock. Go to the editor Note: The output will come every second.
+
+#### Answer:
+
+```javascript
+function getTime() {
+var time = new Date().toLocaleTimeString();
+console.log(time);
+}
+setInterval(getTime, 1000);
+ ```              
+ #### Detail:
+  Date() is method which return date time in javascript And toLocaleTimeString() method gives time in string form.
+  getTime function will return time now we need to put timer to fullfill our requirement.setInterval(getTime, 1000)
+  will give time after every second.
