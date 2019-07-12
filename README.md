@@ -97,7 +97,6 @@ In part1 removing character from the given position whose starting position is 0
 #### Answer:
 
 ```javascript
-var obj = {}
 function getObjectProperties(obj) {
     Object.keys(obj).forEach(item => {console.log(item);});
     }
