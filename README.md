@@ -105,3 +105,23 @@ function getObjectProperties(obj) {
 Object.keys(obj) method gives keys of the object.
 There are not methods such as Objects.forEach().
 So, if we want to iterate through all the keys, then we can use Array.forEach() function.
+
+
+#### 7. Write a JavaScript program to delete the rollno property from the following object.Also print the object before or after deleting the property.
+
+#### Answer:
+
+```javascript
+var student = {
+    name: 'David Rayy',
+    sclass: "VI", 
+    rollno: '999', 
+    } 
+function deletPropertyObject(student) {
+     console.log('Before Deleting sclass of object student');
+     console.log(student);
+     let removeProperty = delete student.sclass;
+     console.log('After Deleting sclass of object student'); 
+     return student;
+   }
+ ```              
