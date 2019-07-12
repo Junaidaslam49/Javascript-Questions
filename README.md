@@ -97,14 +97,10 @@ In part1 removing character from the given position whose starting position is 0
 #### Answer:
 
 ```javascript
-function studentData(a,b,c) {
-var student = {
-    name: a,
-    sclass: b,
-    rollno: c,
+var obj = {}
+function getObjectProperties(obj) {
+    Object.keys(obj).forEach(item => {console.log(item);});
     }
-Object.keys(student).forEach(item => {console.log(item);});
-}
 ```
 #### Details:
 Object.keys(obj) method gives keys of the object.
