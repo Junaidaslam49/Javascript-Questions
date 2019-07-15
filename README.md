@@ -22,19 +22,19 @@ function multiplesOf3and5(number) {
 
 ```javascript
 function fizzBuzz () {
-for (var i = 1 ; i < 100 ; i++){
-    if  (i % 15 == 0 ) {
-        console.log('FizzBuzz');
-    } 
-    else if (i % 5 == 0) {
-        console.log('Buzz');
+    for (var i = 1 ; i < 100 ; i++){
+      if  (i % 15 == 0 ) {
+          console.log('FizzBuzz');
+      } 
+      else if (i % 5 == 0) {
+          console.log('Buzz');
+      }
+      else if (i % 3 == 0 ){
+          console.log ('Fizz');
+      }else{
+      console.log(i);
+      }
     }
-    else if (i % 3 == 0 ){
-        console.log ('Fizz');
-    }else{
-    console.log(i);
-    }
-}
 }  
  ```
 #### 3. Write a JavaScript program to compute the union of two arrays.Sample Data:
@@ -62,7 +62,7 @@ In combination we are combining two arrays and in result we have use filter meth
 function filterArray(sampleArray) {  
   var sampleArrayFixed = sampleArray.filter(value => {  
   if ((value !== false) && (value !== undefined) && (value !== null)  && (value !== 0) && ((isNaN(value) && typeof value === 'number') !== true) && (value !== "")){
-          return true; //output: [15, -22, 47]
+          return true;
           }
       return false;
       });
