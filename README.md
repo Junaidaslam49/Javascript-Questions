@@ -59,8 +59,7 @@ In combination we are combining two arrays and in result we have use filter meth
 #### Answer:
 
 ```javascript
-function filterArray() {
-  let sampleArray = [NaN, 0, 15, false, -22, '',undefined, 47, null, "ahsan"];  
+function filterArray(sampleArray) {  
   var sampleArrayFixed = sampleArray.filter(value => {  
   if ((value !== false) && (value !== undefined) && (value !== null)  && (value !== 0) && ((isNaN(value) && typeof value === 'number') !== true) && (value !== "")){
           return true; //output: [15, -22, 47]
@@ -79,8 +78,8 @@ Used filter method to check each value of sampleArray and apllied if condition t
 
 ```javascript
 function removeString(myString,position) {
-  part1 = myString.substring(0, position);   
-  part2 = myString.substring(position + 1, myString.length); 
+    part1 = myString.substring(0, position);   
+    part2 = myString.substring(position + 1, myString.length); 
   return (part1 + part2);     
 }
 ```
@@ -93,7 +92,7 @@ In part1 removing character from the given position whose starting position is 0
 
 ```javascript
 function getObjectProperties(obj) {
-    Object.keys(obj).forEach(item => {console.log(item);});
+      Object.keys(obj).forEach(item => {console.log(item);});
     }
 ```
 #### Details:
@@ -107,15 +106,10 @@ So, if we want to iterate through all the keys, then we can use Array.forEach() 
 #### Answer:
 
 ```javascript
-var student = {
-    name: 'David Rayy',
-    sclass: "VI", 
-    rollno: '999', 
-    } 
 function deletPropertyObject(student) {
      console.log('Before Deleting sclass of object student');
      console.log(student);
-     let removeProperty = delete student.sclass;
+     let removeProperty = delete student.rollno;
      console.log('After Deleting sclass of object student'); 
      return student;
    }
@@ -126,8 +120,8 @@ function deletPropertyObject(student) {
 
 ```javascript
 function getTime() {
-var time = new Date().toLocaleTimeString();
-console.log(time);
+    var time = new Date().toLocaleTimeString();
+    console.log(time);
 }
 setInterval(getTime, 1000);
  ```              
