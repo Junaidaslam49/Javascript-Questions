@@ -149,7 +149,7 @@ function dropRight(array,n) {
 ```javascript
 function head (arr) {
    let f = arr[0];
-   console.log(f);
+   return f;
    }
  ```
  
