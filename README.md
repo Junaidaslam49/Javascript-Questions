@@ -129,3 +129,17 @@ setInterval(getTime, 1000);
   Date() is method which return date time in javascript And toLocaleTimeString() method gives time in string form.
   getTime function will return time now we need to put timer to fullfill our requirement.setInterval(getTime, 1000)
   will give time after every second.
+  
+#### 9. Create a method named *dropRight* It accepts two arguments. One is an Array and second is a Number `n`
+#### It returns a new array with `n` number of elements removed from the right
+
+#### Answer:
+
+```javascript
+function dropRight(array,n) {
+  for (i=0 ; i < n ; i++){
+        array.pop();
+        }
+ return array;
+     }
+ ```
