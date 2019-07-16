@@ -137,11 +137,9 @@ setInterval(getTime, 1000);
 
 ```javascript
 function dropRight(array,n) {
-  for (i=0 ; i < n ; i++){
-        array.pop();
-        }
- return array;
-     }
+   let newArray= array.slice(0,array.length-n);
+   return newArray;
+   }
  ```
  
 #### 10. Create a method named head It accepts an array as an argument.It returns the head of a list
