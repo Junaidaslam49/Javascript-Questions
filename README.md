@@ -154,3 +154,14 @@ function head (arr) {
    console.log(f);
    }
  ```
+ 
+#### 11. Create a method named initial It accepts an array as an argument.It returns all the elements of an array except the last one.
+
+#### Answer:
+
+```javascript
+function initial(arr) {
+    let newArr=arr.slice(0,arr.length-1);
+    return newArr;
+    }
+ ```
