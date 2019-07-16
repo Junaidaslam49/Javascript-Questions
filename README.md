@@ -143,3 +143,14 @@ function dropRight(array,n) {
  return array;
      }
  ```
+ 
+#### 10. Create a method named head It accepts an array as an argument.It returns the head of a list
+
+#### Answer:
+
+```javascript
+function head (arr) {
+   let f = arr[0];
+   console.log(f);
+   }
+ ```
