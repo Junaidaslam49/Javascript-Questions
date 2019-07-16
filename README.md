@@ -163,3 +163,18 @@ function initial(arr) {
     return newArr;
     }
  ```
+ #### 12. Create a method named allEqual It accepts an array as an argument.It returns true if all elements in an array are equal otherwise returns false.
+ 
+#### Answer:
+
+
+```javascript
+function allEqual(arr) {
+   if (arr.every( (val, i, arr) => val === arr[0] )){
+        return true;
+    }else 
+    {
+        return false;
+    }
+}
+ ```
