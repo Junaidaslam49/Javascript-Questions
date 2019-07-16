@@ -170,11 +170,6 @@ function initial(arr) {
 
 ```javascript
 function allEqual(arr) {
-   if (arr.every( (val, i, arr) => val === arr[0] )){
-        return true;
-    }else 
-    {
-        return false;
-    }
-}
+   return arr.every( (val, i, arr) => val === arr[0] );
+   }
  ```
