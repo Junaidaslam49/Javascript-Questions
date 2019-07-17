@@ -204,4 +204,16 @@ function dropLeft(arr,n) {
 }
  ```
 #### Details:
-We have used splice instead of slice because slice (from,until) and until is excluded in slice so we have used splice (index,number of counts). 
+We have used splice instead of slice because slice (from,until) and until is excluded in slice so we have used splice (index,number of counts).
+
+ #### 15. Create a method named everyNth It accepts two arguments. One is Array and second is Number n.It returns every nth element in an array.
+
+#### Answer:
+
+
+```javascript
+function everyNth(arr, n) {
+    let newArray = arr.filter((index,item) => index%n === 0);
+    return newArray;
+ }
+ ```
