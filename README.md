@@ -159,9 +159,9 @@ function head (arr) {
 
 ```javascript
 function initial(arr) {
-    let newArr=arr.slice(0,arr.length-1);
-    return newArr;
-    }
+  let newArr=arr.slice(0,arr.length-1);
+  return newArr;
+}
  ```
  #### 12. Create a method named allEqual It accepts an array as an argument.It returns true if all elements in an array are equal otherwise returns false.
  
@@ -170,6 +170,6 @@ function initial(arr) {
 
 ```javascript
 function allEqual(arr) {
-   return arr.every( (val, i, arr) => val === arr[0] );
-   }
+ return arr.every( (val, i, arr) => val === arr[0] );
+ }
  ```
