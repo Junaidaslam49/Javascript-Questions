@@ -190,3 +190,18 @@ function countOccurrences(arr,val) {
     return a;
 }
  ```
+ 
+ #### 14. Create a method named dropLeft It accepts two arguments. One is an Array and second is a Number n 
+  ####    It returns a new array with n number of elements removed from the left.
+ 
+#### Answer:
+
+
+```javascript
+function dropLeft(arr,n) {
+    let newArray= arr.splice(0,n);
+    return arr;
+}
+ ```
+#### Details:
+We have used splice instead of slice because slice (from,until) and until is excluded in slice so we have used splice (index,number of counts). 
