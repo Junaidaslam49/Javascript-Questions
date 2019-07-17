@@ -173,3 +173,20 @@ function allEqual(arr) {
  return arr.every( (val, i, arr) => val === arr[0] );
  }
  ```
+ 
+ #### 13. Create a method named countOccurrences It accepts an array and a value as arguments It returns the occurrences (count) of a value in an array.
+ 
+#### Answer:
+
+
+```javascript
+function countOccurrences(arr,val) {
+    let a = 0;
+  arr.forEach((elem, index) => {
+     if (elem == val) {
+          a++;
+        } 
+  })
+    return a;
+}
+ ```
