@@ -181,13 +181,13 @@ function allEqual(arr) {
 
 ```javascript
 function countOccurrences(arr,val) {
-    let a = 0;
+    let count = 0;
   arr.forEach((elem, index) => {
      if (elem == val) {
-          a++;
+          count++;
         } 
   })
-    return a;
+    return count;
 }
  ```
  
