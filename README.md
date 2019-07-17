@@ -199,8 +199,13 @@ function countOccurrences(arr,val) {
 
 ```javascript
 function dropLeft(arr,n) {
-    let newArray= arr.splice(0,n);
-    return arr;
+    let indexArray = [];
+    arr.forEach((elem, index) => {
+       if (index > n-1) {
+             indexArray.push(elem);
+       } 
+    })
+   return indexArray;
 }
  ```
 #### Details:
