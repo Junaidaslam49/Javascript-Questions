@@ -217,3 +217,21 @@ function everyNth(arr, n) {
     return newArray;
  }
  ```
+
+
+#### 16. Create a method named indexOfAll It accepts two arguments. One is array and second is value.It returns all indices of val in an array
+
+#### Answer:
+
+
+```javascript
+function indexOfAll (arr, val) {
+    let indexArray = [];
+    arr.forEach((elem, index) => {
+       if (elem === val) {
+             indexArray.push(index);
+       } 
+    })
+return indexArray;  
+  }
+ ```
