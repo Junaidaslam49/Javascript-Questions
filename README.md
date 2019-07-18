@@ -240,3 +240,15 @@ function indexOfAll (arr, val) {
 return indexArray;  
   }
  ```
+ 
+#### 17. Create a method named last It accepts an array as an argument.It returns the last element of a list.
+
+#### Answer:
+
+
+```javascript
+ function last(arr) {
+  let newArray = arr.slice(-1);
+  return newArray; 
+ }
+ ```
