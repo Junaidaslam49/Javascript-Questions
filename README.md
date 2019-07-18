@@ -252,6 +252,9 @@ return indexArray;
   return newArray; 
  }
  ```
+ #### Detail:
+  The first element has an index of 0. Use negative numbers to select from the end of an array. An integer that specifies     where to end the selection. If omitted, all elements from the start position and to the end of the array will be selected.   Use negative numbers to select from the end of an array.
+ 
  #### 18.Create a method named reverse It accepts an array as an argument.It returns the new array but elements in reversed order.
 
 #### Answer:
