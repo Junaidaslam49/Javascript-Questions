@@ -313,17 +313,13 @@ With the apply() method, you can write a method that can be used on different ob
 #### Answer:
 
 ```javascript
-var person = {
-      fullName: function(city, country) {
-          return this.firstName + " " + this.lastName + " " + city + " " + country;
-      }
-  }
-  var person1 = {
-  firstName: "Mary",
-  lastName: "Doe"
-  }
-  var x = person.fullName.apply(person1,["Oslo", "Norway"]); 
-  document.getElementById("demo").innerHTML = x;
+let customer1 = { name: 'Leo', email: 'leo@gmail.com' };
+let customer2 = { name: 'Nat', email: 'nat@hotmail.com' };
+function greeting(text, text2) {
+   console.log(`${text} ${this.name}, ${text2}`);
+}
+greeting.apply(customer1, ['Hello', 'How are you?']); // output Hello Leo, How are you?
+greeting.apply(customer2, ['Hello', 'How are you?']); // output Hello Natm How are you?
 ```
 #### Detail:
 The apply() method takes arguments as an array.The apply() method is very handy if you want to use an array instead of an argument list.
@@ -357,17 +353,15 @@ It can be used to invoke (call) a method with an owner object as an argument (pa
 #### Answer:
 
 ```javascript
-var personA = {
-        fullPersonName: function(cityA,countryB) {
-        return this.firstName + " " + this.lastName + " " + cityA + " " + countryB;
-    }
+let customer1 = { name: 'Leo', email: 'leo@gmail.com' };
+let customer2 = { name: 'Nat', email: 'nat@hotmail.com' };
+
+function greeting(text) {
+    console.log(`${text} ${this.name}`);
 }
-  var person2 = {
-  firstName:"John",
-  lastName: "Doe"
-  }
-  var y = personA.fullPersonName.call(person2); 
-  document.getElementById("demo").innerHTML = y;
+
+greeting.call(customer1, 'Hello'); // Hello Leo
+greeting.call(customer2, 'Hello'); // Hello Nat
   
 ```
 #### Detail:
