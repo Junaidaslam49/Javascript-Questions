@@ -358,8 +358,8 @@ It can be used to invoke (call) a method with an owner object as an argument (pa
 
 ```javascriptvar
 var personA = {
-        fullPersonName: function() {
-        return this.firstName + " " + this.lastName;
+        fullPersonName: function(cityA,countryB) {
+        return this.firstName + " " + this.lastName + " " + cityA + " " + countryB;
     }
 }
   var person2 = {
@@ -371,5 +371,7 @@ var personA = {
   
 ```
 #### Detail:
-The call() method is a predefined JavaScript method.
-It can be used to invoke (call) a method with an owner object as an argument (parameter).With call(), an object can use a method belonging to another object.
+The difference is:
+The call() method takes arguments separately.
+The apply() method takes arguments as an array.
+
