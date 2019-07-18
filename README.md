@@ -327,3 +327,26 @@ var person = {
 ```
 #### Detail:
 The apply() method takes arguments as an array.The apply() method is very handy if you want to use an array instead of an argument list.
+
+
+#### 22.Call method without arguments.
+
+#### Answer:
+
+```javascriptvar
+var personA = {
+        fullPersonName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+  var person2 = {
+  firstName:"John",
+  lastName: "Doe"
+  }
+  var y = personA.fullPersonName.call(person2); 
+  document.getElementById("demo").innerHTML = y;
+  
+```
+#### Detail:
+The call() method is a predefined JavaScript method.
+It can be used to invoke (call) a method with an owner object as an argument (parameter).With call(), an object can use a method belonging to another object.
