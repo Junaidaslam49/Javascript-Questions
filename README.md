@@ -280,7 +280,6 @@ function reverse(arr) {
 
 ```javascript
 function random(arr) {
-    let randomNumber=Math.floor(Math.random() * arr.length);
-    return randomNumber;
+   return arr[Math.floor(Math.random() * arr.length)];
 }
 ```
