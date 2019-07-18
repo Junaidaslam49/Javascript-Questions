@@ -286,3 +286,23 @@ function random(arr) {
    return arr[Math.floor(Math.random() * arr.length)];
 }
 ```
+
+#### 20.Apply method without arguments.
+
+#### Answer:
+
+```javascript
+var person = {
+      fullName: function() {
+          return this.firstName + " " + this.lastName;
+      }
+  }
+  var person1 = {
+  firstName: "Mary",
+  lastName: "Doe"
+  }
+  var x = person.fullName.apply(person1); 
+  document.getElementById("demo").innerHTML = x;
+```
+#### Detail:
+With the apply() method, you can write a method that can be used on different objects.
