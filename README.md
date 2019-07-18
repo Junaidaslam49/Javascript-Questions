@@ -306,3 +306,24 @@ var person = {
 ```
 #### Detail:
 With the apply() method, you can write a method that can be used on different objects.
+
+
+#### 21.Apply method with arguments.
+
+#### Answer:
+
+```javascript
+var person = {
+      fullName: function(city, country) {
+          return this.firstName + " " + this.lastName + " " + city + " " + country;
+      }
+  }
+  var person1 = {
+  firstName: "Mary",
+  lastName: "Doe"
+  }
+  var x = person.fullName.apply(person1,["Oslo", "Norway"]); 
+  document.getElementById("demo").innerHTML = x;
+```
+#### Detail:
+The apply() method takes arguments as an array.The apply() method is very handy if you want to use an array instead of an argument list.
