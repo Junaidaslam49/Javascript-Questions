@@ -274,3 +274,13 @@ function reverse(arr) {
     return arr.reverse();
 }
 ```
+ #### 19.Create a method named randomIt accepts an array as an argument.It returns a random element from the given array.
+
+#### Answer:
+
+```javascript
+function random(arr) {
+    let randomNumber=Math.floor(Math.random() * arr.length);
+    return randomNumber;
+}
+```
