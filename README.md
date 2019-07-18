@@ -333,7 +333,7 @@ The apply() method takes arguments as an array.The apply() method is very handy 
 
 #### Answer:
 
-```javascriptvar
+```javascript
 var personA = {
         fullPersonName: function() {
         return this.firstName + " " + this.lastName;
@@ -356,7 +356,7 @@ It can be used to invoke (call) a method with an owner object as an argument (pa
 
 #### Answer:
 
-```javascriptvar
+```javascript
 var personA = {
         fullPersonName: function(cityA,countryB) {
         return this.firstName + " " + this.lastName + " " + cityA + " " + countryB;
