@@ -252,3 +252,25 @@ return indexArray;
   return newArray; 
  }
  ```
+ #### 18.Create a method named reverse It accepts an array as an argument.It returns the new array but elements in reversed order.
+
+#### Answer:
+
+###### Using for loop
+```javascript
+function reverse(arr) {
+    let newArray=[];
+  for (var i=0, j=arr.length-1 ; i < arr.length ; i++,j--) {
+           newArray[i] = arr[j];
+       }
+    
+    return newArray;
+}
+```
+###### Using reverse method
+
+```javascript
+function reverse(arr) {
+    return arr.reverse();
+}
+```
