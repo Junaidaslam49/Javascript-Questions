@@ -417,9 +417,11 @@ Detail:
 
 ```javascript
 function reverseObject(obj) {
-    var output = Object.entries(obj).map(([value, key]) => ({key,value}));
-    return Object.assign({},output);
+    var array = Object.entries(obj)
+    var convert = array.map( arr => ({[arr[1]]:arr[0]}));
+    let output = Object.assign(...convert);
+    return output;
 }  
 ```
 #### Detail:
-First we have use Object.entries() method to convert object into array to use .map method and then converted key into value and value into key and in return we used Object.assign() which accepts to two arguments one target to save data and second to convert and this method is used  to convert array in to object 
+First we have use Object.entries() method to convert object into array to use .map method and then converted key into value and value into key and in return we used Object.assign() and used (...) spread operator on convert to show multiple objects in one object. 
