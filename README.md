@@ -411,3 +411,15 @@ console.log(newTarget.d);
 Detail:
 ```
 
+#### 25.Write a method which reverse the key and values in an object.After reversal the keys will be values and values will be keys.
+
+#### Answer:
+
+```javascript
+function reverseObject(obj) {
+    var output = Object.entries(obj).map(([value, key]) => ({key,value}));
+    return Object.assign({},output);
+}  
+```
+#### Detail:
+First we have use Object.entries() method to convert object into array to use .map method and then converted key into value and value into key and in return we used Object.assign() which accepts to two arguments one target to save data and second to convert and this method is used  to convert array in to object 
