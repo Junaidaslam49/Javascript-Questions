@@ -424,4 +424,22 @@ function reverseObject(obj) {
 }  
 ```
 #### Detail:
-First we have use Object.entries() method to convert object into array to use .map method and then converted key into value and value into key and in return we used Object.assign() and used (...) spread operator on convert to show multiple objects in one object. 
+First we have use Object.entries() method to convert object into array to use .map method and then converted key into value and value into key and in return we used Object.assign() and used (...) spread operator on convert to show multiple objects in one object.
+
+
+#### 26.Write a function that takes a string as argument and returns the number of vowels contained in that string.
+
+#### Answer:
+
+```javascript
+function findVowels(str) {
+  let vowelCount = 0; 
+  for (i=0; i< str.length; i++){
+      if(str.toLowerCase()[i] == 'a' | str.toLowerCase()[i] == 'e' | str.toLowerCase()[i] == 'i' | str.toLowerCase()[i] == 'o' | str.toLowerCase()[i] == 'u')
+      {
+          vowelCount++;
+      }
+}
+  return vowelCount;               
+}  
+```
