@@ -369,3 +369,26 @@ The difference is:
 The call() method takes arguments separately.
 The apply() method takes arguments as an array.
 
+
+#### 24.Write all possible ways to clone a JavaScript object.Also provide examples.After clone the new object should not have reference to old object. It should be a deep copy.
+
+#### Answer:
+
+###### Converting to JSON and back
+
+```javascript          
+function jasonCopy(src) {
+    return JSON.parse(JSON.stringify(src));
+      }
+   const source = {a:1,b:2,c:3};
+   const target = jasonCopy(source);
+   console.log(target);
+
+// Check if clones it and not changing it
+   source.a = 'a';
+   console.log(source.a);
+   console.log(target.a);
+Detail:
+Be careful about using this method as your source object must be JSON safe. So it may need some sort of exception handling to keep it safe in cases in which the source object is not convertible to JSON.  
+```
+
