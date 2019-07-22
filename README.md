@@ -389,6 +389,7 @@ function jasonCopy(src) {
    console.log(source.a);
    console.log(target.a);
 Detail:
+The JSON object, available in all modern browsers, has two very useful methods to deal with JSON-formatted content: parse and stringify. JSON.parse() takes a JSON string and transforms it into a JavaScript object. JSON.stringify() takes a JavaScript object and transforms it into a JSON string.
 Be careful about using this method as your source object must be JSON safe. So it may need some sort of exception handling to keep it safe in cases in which the source object is not convertible to JSON.  
 ```
 
