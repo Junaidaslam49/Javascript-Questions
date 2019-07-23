@@ -444,12 +444,25 @@ function findVowels(str) {
 }  
 ```
 
-#### 26.You've got chickens (2 legs), cows (4 legs) and pigs (4 legs) on your farm. Return the total number of legs on your farm.
+#### 27.You've got chickens (2 legs), cows (4 legs) and pigs (4 legs) on your farm. Return the total number of legs on your farm.
 
 #### Answer:
 
 ```javascript
 function animals(chickens,cows,pigs) {
     return chickens*2 + cows*4 + pigs*4;
+}  
+```
+
+#### 28.Anagram (A word is an anagram of another word if both use the same letters in the same quantity, but arranged differently.Create a method named Anagram It accepts two words as an argument. It returns true if A word is an anagram of another word otherwise returns false.
+
+#### Answer:
+
+```javascript
+function anagram(word1,word2) {
+    let wrd1Array = word1.split("").sort().join("");
+    let wrd2Array = word2.split("").sort().join("");
+
+    return wrd1Array === wrd2Array;
 }  
 ```
