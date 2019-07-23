@@ -392,7 +392,7 @@ Detail:
 The JSON object, available in all modern browsers, has two very useful methods to deal with JSON-formatted content: parse and stringify. JSON.parse() takes a JSON string and transforms it into a JavaScript object. JSON.stringify() takes a JavaScript object and transforms it into a JSON string.
 Be careful about using this method as your source object must be JSON safe. So it may need some sort of exception handling to keep it safe in cases in which the source object is not convertible to JSON.
 
-Object.assign:
+// Object.assign:
 
 function bestCopyEver(src) {
   return Object.assign({},src);
@@ -409,6 +409,14 @@ console.log(newSource.d);
 console.log(newTarget.d);
 
 Detail:
+The Object.assign() method can be used to copy the values of all enumerable own properties from one or more source objects to a target object, and it will return the target object.
+
+// Spread Operator:
+ This one is shortest and simple method to copy/merge an object. See below example:
+
+var obj = { foo: "foo", bar: "bar" };
+var clonedObj = { ...obj };
+// Object { foo: "foo", bar: "bar" } 
 ```
 
 #### 25.Write a method which reverse the key and values in an object.After reversal the keys will be values and values will be keys.
