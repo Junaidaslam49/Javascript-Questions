@@ -466,3 +466,6 @@ function anagram(word1,word2) {
     return wrd1Array === wrd2Array;
 }  
 ```
+
+#### Detail:
+So we start by running the split() string method on our string. This will turn our word into an array by breaking it up after each letter.sort() uses the sort() array method to alphabetically sort that array of letters.Lastly we take our array of alphabetized letters and smush them back together into a string using the join() array method.
