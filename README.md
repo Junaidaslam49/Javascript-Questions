@@ -482,3 +482,19 @@ Using split() method with argument split("") will sperate the string charactierw
 The join() method returns the array as a string.
 The elements will be separated by a specified separator. The default separator is comma (,) bu using join("") argument.
 
+
+#### 29.The problem can be stated along the following lines: given a string, return true if the string is a palindrome and false if it isn’t. Include spaces and punctuation in deciding if the string is a palindrome.
+
+#### Answer:
+
+```javascript
+function palindrome(str) {
+    let reverseStr = str.toLowerCase().replace(/\s/g, '').split("").reverse().join("");
+    let lowCase = str.toLowerCase().replace(/\s/g, '');
+    if (lowCase === reverseStr){
+        return true;
+    }
+    return false;
+}  
+```
+
