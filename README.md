@@ -516,4 +516,20 @@ function unorderedSum(arr) {
      return count;
  }  
 ```
+#### 31.Write a function that returns the nth entry in the Fibonacci sequence, where n is a number you pass in as argument to the function.
+
+#### Answer:
+
+```javascript
+function fibonacci(n) {
+   if (n == 0) {
+       return 0;
+   }
+   if (n == 1) {
+       return 1;
+   }else{
+     return  fibonacci(n-1) + fibonacci(n-2);
+   }
+}  
+```
 
