@@ -498,3 +498,22 @@ function palindrome(str) {
 }  
 ```
 
+#### 30.Given an array A of N distinct and positive elements, the task is to find number of unordered pairs whose sum already exists in given array.
+
+#### Answer:
+
+```javascript
+function unorderedSum(arr) {
+  let count = 0;
+     for(i=0 ; i < arr.length-1; i++){
+         for(j=0; j < i; j++){
+             let result = arr[i] + arr[j];
+             if(arr.find(elem  => elem  === result)){
+                 count++;
+             }
+         }
+     }
+     return count;
+ }  
+```
+
