@@ -533,3 +533,16 @@ function fibonacci(n) {
 }  
 ```
 
+#### 32.Give a string and a number n you have to rotate the string right n times
+
+#### Answer:
+
+```javascript
+function keepRotating(str,n) {
+    var reverseStr = '';
+    var newStr = str.slice(0, str.length-n);
+    reverseStr = str.slice(str.length-n)
+    return reverseStr+newStr;
+}  
+```
+
