@@ -545,4 +545,21 @@ function keepRotating(str,n) {
     return reverseStr+newStr;
 }  
 ```
+#### 33.Using recursion print an array in reverse order
+
+#### Answer:
+
+```javascript
+function printReverseRecursive (array) {
+    var output = [];
+    if (output.length===array.length) {
+        return output;
+    } else {
+        var reversedArray = output.concat(printReverseRecursive(array.slice(1)),array[0]);
+        reversedArray.forEach((elem) => {
+            console.log (elem); 
+        }) 
+    }
+};  
+```
 
