@@ -584,3 +584,23 @@ function printStars(n) {
 The substr() method returns a portion of the string, starting at the specified index and extending for a given number of characters afterward.If only one argument is passed it will remove till given argument and returns the rest of strings.
 
 
+#### 35. Write a recursive function which accepts a parameter n and print stars to that level.
+
+#### Answer:
+
+```javascript  
+function printRecursiveStars(n) {
+    var stars = "";
+    if (n<1) {
+        return stars;
+    }else{
+        stars = printRecursiveStars(n-1);
+        stars += "*";
+        console.log(stars);
+        return stars;
+    }
+
+};  
+```
+
+
