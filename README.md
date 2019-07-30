@@ -574,7 +574,7 @@ function printStars(n) {
         console.log(stars);
     }
     for(j=n; j>=1; j--){
-        var newStars = stars.substr(n-(j-1));
+        var newStars = stars.substr(n-j);
         console.log(newStars);
     }
 
