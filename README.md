@@ -562,4 +562,25 @@ function printReverseRecursive (array) {
     }
 };  
 ```
+#### 34.Write a function which accepts a parameter n and print stars to that level.
+
+#### Answer:
+
+```javascript
+function printStars(n) {
+    var stars = "";
+    for(i=1; i<=n; i++){   
+        stars += "*";
+        console.log(stars);
+    }
+    for(j=n; j>=1; j--){
+        var newStars = stars.substr(n-(j-1));
+        console.log(newStars);
+    }
+
+};  
+```
+#### Detail:
+The substr() method returns a portion of the string, starting at the specified index and extending for a given number of characters afterward.If only one argument is passed it will remove till given argument and returns the rest of strings.
+
 
