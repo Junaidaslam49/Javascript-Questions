@@ -600,7 +600,22 @@ function printRecursiveStars(n) {
         return stars;
     }
 
-};  
+};
+
+// Reverse pattern    
+
+function reverseStars(n) {
+    var stars='*';
+    var newStars = stars.repeat(n);
+    console.log(newStars);
+    if (n < 1) {
+        return 0;
+    }else{
+        reverseStars(n-1);
+        return newStars;
+    }
+
+};
 ```
 
 
